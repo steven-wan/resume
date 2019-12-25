@@ -28,7 +28,9 @@
         box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
         background-color: #fff;
       }
-
+      p {
+        text-align: justify;
+      }
       h1 {
         margin-left: -20px;
         padding-left: 15px;
@@ -56,8 +58,8 @@
       .box > a {
         color: #333;
       }
-      .box span{
-        color:#5dc3b1;
+      .box span {
+        color: #5dc3b1;
       }
       section a:hover {
         color: #333;
@@ -118,7 +120,8 @@
             ● 熟悉<span>Promise</span>、<span>ES6/ES7</span>的使用；
           </div>
           <div class="box bg-gray-lightest">
-            ● 熟悉<span>Vue</span>和周边库的使用，理解<span>生命周期</span>、<span>异步更新</span>、<span>数据响应式</span>、<span>虚拟DOM</span>、<span>性能优化</span>等，并应用在项目的公共组件上，会针对公共组件做<span>单元测试</span>；
+            ●
+            熟悉<span>Vue</span>和周边库的使用，理解<span>生命周期</span>、<span>异步更新</span>、<span>数据响应式</span>、<span>虚拟DOM</span>、<span>性能优化</span>等，并应用在项目的公共组件上，对组件做<span>单元测试</span>；
           </div>
           <div class="box bg-gray-lightest">● 熟悉<span>React Hooks/TypeScript</span>的使用，并进行基本开发；</div>
           <div class="box bg-gray-lightest">
@@ -162,7 +165,7 @@
             <p class="m-t-0">侨行天下</p>
             <p>简介：购物商城和黄金理财，主要应用在手机和微信浏览器上。</p>
             <p>
-              角色：负责购物商城和黄金理财两个模块，购物商城基于Vue开发，黄金理财因项目历史原因基于jQ开发。其中黄金理财中期限、克重有标尺刻度（刻度非平均），支持拖动和手动输入，收益也跟随它们改变，对此交互用touch事件解决，未依赖第三方插件。
+              角色：负责购物商城和黄金理财两个模块。考虑到项目历史原因和后期迭代、重构等因素，向负责人提出购物商城使用前后分离的方案，和Vue技术栈开发，黄金理财依旧使用jQ开发。其中黄金理财交互较为复杂，需让期限、克重（两者的标尺刻度均非平均）支持拖动和手动输入，继而收益也跟随改变。拖动使用了原生touch事件，拖动距离与刻度之间的转换经过一番研究后得出公式解决。
             </p>
           </div>
           <!-- <div class="box bg-gray-lightest">
@@ -177,15 +180,17 @@
             ● 国鼎文化科技产业发展股份有限公司 （ 2017 年 8 月 ~ 2018 年 7 月 ）
           </div>
           <div class="box bg-gray-lightest">
-            <p class="m-t-0">西牛买买买</p>
-            <p>简介：线上数码商店购物平台，支持多家店铺。</p>
-            <p>角色：负责PC端首页、购物车，移动端列表页、购物车和个人中心等功能。PC端选用jQuery，移动端选用Vue。jQ实现购物车多店铺选中、删除、数量控制等交互，原生js实现图片上传和预览。</p>
-          </div>
-          <div class="box bg-gray-lightest">
             <p class="m-t-0">管理后台</p>
             <p>简介：产品管理后台，公司内部人员使用</p>
             <p>
-              角色：负责管理后台4个模块的开发，分别为栏目管理、运营中心、客服中心、商品管理，共计40+页面。基于Vue+Element开发，根据模块从上至下，快速搭建每个模块的骨架，设置其路由，抽取公共逻辑。再填充数据和业务逻辑，最后与后端联调。
+              角色：负责管理后台4个模块的开发，分别为栏目管理、运营中心、客服中心、商品管理，共计40+页面。基于Vue+Element开发，根据模块从上至下，快速搭建每个模块的骨架，设置其路由，抽取公共逻辑。再对每个模块填充数据和业务逻辑，最后与后端联调。
+            </p>
+          </div>
+          <div class="box bg-gray-lightest">
+            <p class="m-t-0">西牛买买买</p>
+            <p>简介：线上数码商店购物平台，支持多家店铺。</p>
+            <p>
+              角色：负责PC端首页、购物车、个人中心等功能。技术栈采用jQ，实现购物车多店铺选中、删除、数量控制等复杂的响应式交互，原生js实现图片上传和预览。在做该项目时，更换了思路，尝试去拆分功能，封装函数组件，最后把它们有序的串起来，在分析解决问题时获益良多。
             </p>
           </div>
         </div>
