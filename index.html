@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <meta name="description" content="" />
-  <title>Resume</title>
+  <title>Freda's resume</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg" />
   <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -68,6 +68,10 @@
       color: #333;
     }
 
+    .box>a.link {
+      text-decoration: underline;
+    }
+
     .box span {
       color: #5dc3b1;
     }
@@ -80,6 +84,11 @@
     .project-name {
       font-size: 18px;
       margin-bottom: 6px;
+    }
+
+    .project-name>.link {
+      color: #5dc3b1;
+      text-decoration: underline;
     }
 
     p {
@@ -122,7 +131,7 @@
           <div class="row">
             <div class="col-4 p-t-10 p-b-10">● 费晗 | 女 | 1993</div>
             <div class="col-4 p-t-10 p-b-10 border">● 武汉生物工程学院 | 计算机网络</div>
-            <div class="col-4 p-t-10 p-b-10 border">● 应聘前端开发 | 2 年工作经验</div>
+            <div class="col-4 p-t-10 p-b-10 border">● 应聘前端开发 | 3 年工作经验</div>
           </div>
         </div>
         <div class="box bg-gray-lightest">
@@ -146,10 +155,16 @@
         </div>
         <div class="box bg-gray-lightest">
           ●
-          熟悉<span>Vue</span>和周边库的使用，理解<span>生命周期</span>、<span>异步更新</span>、<span>数据响应式</span>、<span>虚拟DOM</span>、<span>性能优化</span>等，并应用在项目的公共组件上，会使用<span>chai/sinon/karma</span>对组件做<span>单元测试</span>，以及<span>测试覆盖率和Travis
-            CI持续集成</span>；
+          熟悉<span>Vue</span>和周边库的使用，理解<span>生命周期</span>、<span>异步更新</span>、<span>数据响应式</span>、<span>虚拟DOM</span>、<span>性能优化</span>等；
         </div>
-        <div class="box bg-gray-lightest">● 熟悉<span>React Hooks/TypeScript</span>的使用，并进行基本开发；</div>
+        <div class="box bg-gray-lightest">● 理解<span>React</span>思想，熟悉<span>React Hooks+TypeScript</span>的组合环境，能进行开发；
+        </div>
+        <div class="box bg-gray-lightest">
+          ● 熟悉组件拆分和封装，能编写<span>项目公共组件</span>和<span>使用文档</span>，并对其做<span>单元测试</span>；
+        </div>
+        <div class="box bg-gray-lightest">
+          ● 熟悉<span>jest/chai/sinon/karma</span>的使用，和<span>测试覆盖率</span>和<span>Travis CI持续集成</span>；
+        </div>
         <div class="box bg-gray-lightest">
           ● 熟悉模块化、工程化开发流程、<span>Webpack</span>打包配置、<span>Yarn/Npm/Git</span>的使用；
         </div>
@@ -163,15 +178,17 @@
       <h1 class="f-s-18 f-w-900 m-b-20">开源项目</h1>
       <div class="boxes default m-b-20">
         <div class="box bg-gray-lightest">
-          <a href="https://github.com/FredaFei/amazing-ui" target="_blank">● amazing-ui（基于 Vue 2.0 的桌面端组件库）</a><a
-            href="https://www.jetbrains.com/opensource/">2019年5月拿到 <span>JetBrains Open Source license(s)</span></a>
+          <a href="https://github.com/FredaFei/amazing-ui" class="link" target="_blank">● amazing-ui（基于 Vue 2.0
+            的桌面端组件库）</a>
+          <a href="https://www.jetbrains.com/opensource/">2019年5月拿到 <span>JetBrains Open Source license(s)</span></a>
         </div>
         <div class="box bg-gray-lightest">
-          <a href="https://github.com/FredaFei/AUI" target="_blank">● AUI（基于React Hooks + Typescript 的组件库）</a>
+          <a href="https://github.com/FredaFei/AUI" class="link" target="_blank">● AUI（基于React Hooks + Typescript
+            的组件库）</a>
         </div>
         <div class="box bg-gray-lightest">
-          <a href="https://github.com/FredaFei/react-ts-template" target="_blank">● react-ts-template（基于React Hooks +
-            Typescript 的基础环境配置）</a>
+          <a href="https://github.com/FredaFei/react-ts-template" class="link" target="_blank">●
+            react-ts-template（基于React Hooks + Typescript 的基础环境配置）</a>
         </div>
       </div>
     </section>
@@ -182,18 +199,19 @@
           ● 杭州华侨宝网络科技有限公司 （ 2018 年 8 月 ~ 至今 ）
         </div>
         <div class="box bg-gray-lightest">
-          <p class="m-t-0 project-name">华侨货币</p>
-          <p>简介：提供线上本币与外币双向兑换服务，主要应用在手机和微信浏览器上。</p>
+          <p class="m-t-0 project-name"><a href="http://www.ocepay.com/wap.html" class="link">华侨货币</a></p>
+          <p>简介：提供线上本币与外币双向兑换服务，主要应用在<span>手机</span>和<span>微信</span>浏览器上。</p>
           <p>
-            角色：负责该项目H5端的开发，包括环境搭建(Vue
-            SPA)、开发、单元测试、打包等。为提高开发效率，降低维护成本，针对该项目定制了一套组件库，其中公共组件14个，业务组件18个，并为其编写了单元测试和使用文档。业务代码采用高内聚低耦合原则，与组件库配合。为后面两次的版本更新缩减了共一周的开发时间，团队的技术水平也更上一层台阶。
+            角色：负责该项目<span>H5</span>的开发，包括<span>环境搭建(Vue
+              SPA)、开发、单元测试、打包</span>等。包含的主要功能模块为<span>登录/注册、兑换、个人中心</span>。
+            为提高开发效率，降低维护成本，针对该项目定制了一套<span>组件库</span>，其中<span>公共组件14个</span>，<span>业务组件18个</span>，并为其编写了<span>单元测试和使用文档</span>。业务代码采用高内聚低耦合原则，与组件库配合。为后面两次的版本更新缩减了共一周的开发时间，团队的技术水平也更上一层台阶。
           </p>
         </div>
         <div class="box bg-gray-lightest">
-          <p class="m-t-0 project-name">侨行天下</p>
-          <p>简介：购物商城和黄金理财，主要应用在手机和微信浏览器上。</p>
+          <p class="m-t-0 project-name"><a href="https://m.qiaoxingtx.com/webapps/shop.html#/" class="link">侨行天下</a></p>
+          <p>简介：购物商城和黄金理财，主要应用在<span>手机</span>和<span>微信</span>浏览器上。</p>
           <p>
-            角色：负责购物商城和黄金理财两个模块。考虑到项目历史原因和后期迭代、重构等因素，向负责人提出购物商城使用前后分离的方案，和Vue技术栈开发，黄金理财依旧使用jQ开发。其中黄金理财交互较为复杂，需让期限、克重（两者的标尺刻度均非平均）支持拖动和手动输入，继而收益也跟随改变。拖动使用了原生touch事件，为使拖动效果更流畅，使用了节流机制，拖动距离与刻度之间的转换经过一番研究后得出公式解决。
+            角色：负责该项目<span>H5</span>端的<span>购物商城和黄金理财</span>两个模块。考虑到项目历史原因和后期迭代、重构等因素，向负责人提出购物商城使用<span>前后分离+Vue</span>技术栈开发的方案，黄金理财依旧使用<span>jQ</span>开发。其中黄金理财交互较为复杂，需让期限、克重（两者的标尺刻度均非平均）支持<span>拖动</span>和手动输入，继而收益也跟随改变。拖动使用了<span>原生touch事件</span>，为使拖动效果更流畅，使用了<span>节流机制</span>，拖动距离与刻度之间的转换经过一番研究后得出公式解决。
           </p>
         </div>
       </div>
@@ -203,16 +221,17 @@
         </div>
         <div class="box bg-gray-lightest">
           <p class="m-t-0 project-name">西牛买买买</p>
-          <p>简介：线上数码商店购物平台，支持多家店铺。</p>
+          <p>简介：线上数码商店购物平台，支持多家店铺。主要应用在<span>PC端</span>浏览器上</p>
           <p>
-            角色：负责PC端首页、购物车、个人中心等功能。技术栈采用jQ，实现购物车多店铺选中、删除、数量控制等复杂的响应式交互，原生js实现图片上传和预览。在做该项目时，为了代码结构清晰，利于阅读维护，更换了思路，尝试去拆分功能，封装函数组件，最后把它们有序的串起来，在分析解决问题时获益良多。
+            角色：负责PC端<span>首页、购物车、个人中心</span>等功能。技术栈采用<span>jQ</span>，实现购物车<span>多店铺选中、删除、数量控制</span>等复杂的响应式交互。在做该项目时，为了代码结构清晰，利于阅读维护，更换了思路，尝试去拆分功能，封装函数组件，最后把它们有序的串起来，在分析解决问题时获益良多。
           </p>
         </div>
         <div class="box bg-gray-lightest">
           <p class="m-t-0 project-name">可溯金融</p>
-          <p>简介：可溯金融投资平台H5</p>
+          <p>简介：可溯金融投资平台，主要应用在<span>手机端</span>浏览器上</p>
           <p>
-            角色：负责投资、债转的开发。基于Vue开发的SPA项目，由于项目业务状态较多，页面模块也多，导致首页渲染时长增加。针对该问题使用了路由懒加载、第三方资源使用CDN、开启gizp压缩、添加首屏loading图，提升用户体验。通过以上方案做了之后，首屏渲染时长相比原来减少了60%。
+            角色：负责该项目<span>H5</span>端的<span>投资、债转</span>两个模块的开发。基于<span>Vue开发的SPA</span>项目，由于项目业务状态较多，页面模块也多，导致首页渲染时长增加。
+            针对该问题分别在代码和打包配置上做了优化，其中代码部分使用了<span>路由懒加载</span>、添加<span>首屏loading图</span>等来提升用户体验，打包配置中添加<span>提取公共代码</span>、<span>压缩文件</span>、<span>第三方资源和静态资源使用CDN</span>等功能。通过以上方案，首屏渲染时长相比原来明显减少。
           </p>
         </div>
       </div>
@@ -222,9 +241,10 @@
         </div>
         <div class="box bg-gray-lightest">
           <p class="m-t-0 project-name">管理后台</p>
-          <p>简介：产品管理后台，公司内部人员使用</p>
+          <p>简介：企业管理后台，供公司内部人员使用，主要应用在<span>PC端</span>浏览器上</p>
           <p>
-            角色：负责管理后台4个模块的开发，分别为栏目管理、运营中心、客服中心、商品管理，共计40+页面。基于Vue+Element开发，根据模块从上至下，快速搭建每个模块的骨架，设置其路由，抽取公共逻辑。再对每个模块填充数据和业务逻辑，最后与后端联调。
+            角色：负责该项目4个模块的开发，分别为<span>栏目管理、运营中心、客服中心、商品管理</span>，共计40+页面。基于<span>Vue+Element</span>开发，根据模块从上至下，快速搭建每个模块的骨架，设置其路由，抽取公共逻辑，在Element组件的基础上，对常用组件做<span>二次封装</span>。
+            根据产品原型和接口文档，对每个模块填充数据和业务逻辑，最后与后端联调。
           </p>
         </div>
       </div>
